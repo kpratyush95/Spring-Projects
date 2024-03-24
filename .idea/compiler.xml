@@ -10,7 +10,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="spring-6-webapp" target="17" />
+      <module name="spring-6-webapp" target="19" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
