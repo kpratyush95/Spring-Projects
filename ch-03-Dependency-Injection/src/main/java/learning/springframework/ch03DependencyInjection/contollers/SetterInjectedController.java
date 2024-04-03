@@ -3,6 +3,7 @@ package learning.springframework.ch03DependencyInjection.contollers;
 
 import learning.springframework.ch03DependencyInjection.services.IGreetingService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Controller;
 
 //Next Preferred Way of Dependency Injection via Setter
@@ -10,8 +11,10 @@ import org.springframework.stereotype.Controller;
 public class SetterInjectedController {
     private IGreetingService iGreetingService;
 
+
     @Autowired
-    public void setIGreetingService(IGreetingService iGreetingService) {
+    @Qualifier("setterGreetingBean")
+    public void setIGreetingService( IGreetingService iGreetingService) {
         this.iGreetingService = iGreetingService;
     }
 
