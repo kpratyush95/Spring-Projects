@@ -4,7 +4,7 @@ import learning.springframework.ch03DependencyInjection.services.IGreetingServic
 import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Service;
 
-@Profile("EN")
+@Profile({"EN", "default"})
 @Service("i18NService")
 public class EnglishGreetingService implements IGreetingService {
     @Override
